@@ -26,3 +26,4 @@ C:\C#\Repositories\TestTaskWeather\Forecast.DataAccess.Postgress\obj\Debug\net8.
 C:\C#\Repositories\TestTaskWeather\Forecast.DataAccess.Postgress\obj\Debug\net8.0\Forecast.DataAccess.Postgress.pdb
 C:\C#\Repositories\TestTaskWeather\Forecast.DataAccess.Postgress\obj\Debug\net8.0\Forecast.DataAccess.Postgress.genruntimeconfig.cache
 C:\C#\Repositories\TestTaskWeather\Forecast.DataAccess.Postgress\obj\Debug\net8.0\ref\Forecast.DataAccess.Postgress.dll
+C:\C#\Repositories\TestTaskWeather\Forecast.DataAccess.Postgress\obj\Debug\net8.0\Forecast.DataAccess.Postgress.sourcelink.json

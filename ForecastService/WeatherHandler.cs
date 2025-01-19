@@ -35,7 +35,7 @@ namespace GetWeatherInfo
         public static async Task<string> BuildMail()
         {
             ForecastEntity forecast = await GetWeatherAsync(hrefConnect);
-            string message = $"Date: {forecast.Date}, temperature: {forecast.Temperature}, text description: {forecast.About}, region: {forecast.Region}, json-response: {forecast.Response}";
+            string message = $"Date: {forecast.Date},\nTemperature: {forecast.Temperature},\nText description: {forecast.About},\nRegion: {forecast.Region},\nJson-response: {forecast.Response}";
 
             return message;
         }
@@ -58,7 +58,7 @@ namespace GetWeatherInfo
             MailMessage msg = new MailMessage(From, To);
 
             msg.Subject = "Weather Forecast";
-            msg.Body = $"<h4>{msgBody}</h4>";
+            msg.Body = $"<p>{msgBody}</p>";
             msg.IsBodyHtml = true;
 
             SmtpClient smtp = new SmtpClient(smtpServer, port);
