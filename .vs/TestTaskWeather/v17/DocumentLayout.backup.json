@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C#\\Repositories\\TestTaskWeather\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\C#\\Repositories\\TestTaskWeather\\ForecastService\\WeatherHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ForecastService\\WeatherHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\C#\\Repositories\\TestTaskWeather\\Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherHandler.cs",
+              "DocumentMoniker": "C:\\C#\\Repositories\\TestTaskWeather\\ForecastService\\WeatherHandler.cs",
+              "RelativeDocumentMoniker": "ForecastService\\WeatherHandler.cs",
+              "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\ForecastService\\WeatherHandler.cs",
+              "RelativeToolTip": "ForecastService\\WeatherHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T23:40:15.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ForecastEntity.cs",
+              "DocumentMoniker": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "RelativeDocumentMoniker": "Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "RelativeToolTip": "Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T23:39:53.723Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

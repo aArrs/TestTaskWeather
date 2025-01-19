@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\C#\\ForecastApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\forecastapp\\forecastservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\forecastapp\\forecastservice\\weatherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\weatherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\forecastapp\\forecastservice\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|c:\\c#\\forecastapp\\forecast.dataaccess.postgress\\context\\forecastdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|solutionrelative:forecast.dataaccess.postgress\\context\\forecastdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\forecastapp\\forecastservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|c:\\c#\\forecastapp\\forecast.dataaccess.postgress\\configurations\\forecastdbconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|solutionrelative:forecast.dataaccess.postgress\\configurations\\forecastdbconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|c:\\c#\\forecastapp\\forecast.dataaccess.postgress\\migrations\\weatherdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|solutionrelative:forecast.dataaccess.postgress\\migrations\\weatherdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|c:\\c#\\forecastapp\\forecast.dataaccess.postgress\\models\\forecastentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|solutionrelative:forecast.dataaccess.postgress\\models\\forecastentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|c:\\c#\\forecastapp\\forecast.dataaccess.postgress\\forecast.dataaccess.postgress.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{90FBD414-BFB4-4905-9BEE-7BDDBB4C77CE}|Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj|solutionrelative:forecast.dataaccess.postgress\\forecast.dataaccess.postgress.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForecastDbContext.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Context\\ForecastDbContext.cs",
+              "RelativeDocumentMoniker": "Forecast.DataAccess.Postgress\\Context\\ForecastDbContext.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Context\\ForecastDbContext.cs",
+              "RelativeToolTip": "Forecast.DataAccess.Postgress\\Context\\ForecastDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T20:39:51.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForecastService.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\ForecastService\\ForecastService.cs",
+              "RelativeDocumentMoniker": "ForecastService\\ForecastService.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\ForecastService\\ForecastService.cs",
+              "RelativeToolTip": "ForecastService\\ForecastService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T23:12:02.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\ForecastService\\Program.cs",
+              "RelativeDocumentMoniker": "ForecastService\\Program.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\ForecastService\\Program.cs",
+              "RelativeToolTip": "ForecastService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:24:49.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\ForecastService\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "ForecastService\\appsettings.Development.json",
+              "ToolTip": "C:\\C#\\ForecastApp\\ForecastService\\appsettings.Development.json",
+              "RelativeToolTip": "ForecastService\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T22:25:30.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherHandler.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\ForecastService\\WeatherHandler.cs",
+              "RelativeDocumentMoniker": "ForecastService\\WeatherHandler.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\ForecastService\\WeatherHandler.cs",
+              "RelativeToolTip": "ForecastService\\WeatherHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:24:30.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForecastDbConfiguration.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Configurations\\ForecastDbConfiguration.cs",
+              "RelativeDocumentMoniker": "Forecast.DataAccess.Postgress\\Configurations\\ForecastDbConfiguration.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Configurations\\ForecastDbConfiguration.cs",
+              "RelativeToolTip": "Forecast.DataAccess.Postgress\\Configurations\\ForecastDbConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T12:16:26.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Migrations\\WeatherDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Forecast.DataAccess.Postgress\\Migrations\\WeatherDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Migrations\\WeatherDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Forecast.DataAccess.Postgress\\Migrations\\WeatherDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:27:33.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Forecast.DataAccess.Postgress.csproj",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj",
+              "RelativeDocumentMoniker": "Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj",
+              "ToolTip": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj",
+              "RelativeToolTip": "Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-15T22:54:53.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForecastEntity.cs",
+              "DocumentMoniker": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "RelativeDocumentMoniker": "Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "ToolTip": "C:\\C#\\ForecastApp\\Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "RelativeToolTip": "Forecast.DataAccess.Postgress\\Models\\ForecastEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T12:56:41.72Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

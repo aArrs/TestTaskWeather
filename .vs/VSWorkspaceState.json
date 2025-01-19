@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Forecast.DataAccess.Postgress",
+    "\\Forecast.DataAccess.Postgress\\Models",
+    "\\ForecastService"
+  ],
+  "SelectedNode": "\\ForecastService\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
