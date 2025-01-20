@@ -3,6 +3,7 @@ using System.Text.Json;
 using System.Net.Mail;
 using Forecast.DataAccess.Postgress.Context;
 using Forecast.DataAccess.Postgress.Models;
+using ForecastServices;
 
 namespace GetWeatherInfo
 {
@@ -16,8 +17,10 @@ namespace GetWeatherInfo
         public static async Task<ForecastEntity> GetWeatherAsync(string href)
         {
             using HttpResponseMessage response = await httpClient.GetAsync(href);
-            
+
             string content = await response.Content.ReadAsStringAsync();
+            Weather weather = new(content);
+            weather = JsonSerializer.Deserialize<Weather>(content);
 
             var current = JsonDocument.Parse(content).RootElement.GetProperty("current");
             var location = JsonDocument.Parse(content).RootElement.GetProperty("location");

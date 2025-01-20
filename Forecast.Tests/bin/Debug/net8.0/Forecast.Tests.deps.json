@@ -14,10 +14,11 @@
           "MSTest.TestFramework": "3.7.1",
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "Microsoft.TestPlatform": "17.12.0",
+          "Microsoft.TestPlatform.TestHost": "17.12.0",
           "coverlet.collector": "6.0.4",
           "xunit": "2.9.3",
           "xunit.runner.console": "2.9.3",
-          "xunit.runner.visualstudio": "3.0.1",
+          "xunit.runner.visualstudio": "2.8.2",
           "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions": "14.0.0.0"
         },
         "runtime": {
@@ -1574,7 +1575,7 @@
         }
       },
       "xunit.runner.console/2.9.3": {},
-      "xunit.runner.visualstudio/3.0.1": {},
+      "xunit.runner.visualstudio/2.8.2": {},
       "Forecast.DataAccess.Postgress/1.0.0": {
         "dependencies": {
           "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": "8.1.0",
@@ -2439,12 +2440,12 @@
       "path": "xunit.runner.console/2.9.3",
       "hashPath": "xunit.runner.console.2.9.3.nupkg.sha512"
     },
-    "xunit.runner.visualstudio/3.0.1": {
+    "xunit.runner.visualstudio/2.8.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lbyYtsBxA8Pz8kaf5Xn/Mj1mL9z2nlBWdZhqFaj66nxXBa4JwiTDm4eGcpSMet6du9TOWI6bfha+gQR6+IHawg==",
-      "path": "xunit.runner.visualstudio/3.0.1",
-      "hashPath": "xunit.runner.visualstudio.3.0.1.nupkg.sha512"
+      "sha512": "sha512-vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==",
+      "path": "xunit.runner.visualstudio/2.8.2",
+      "hashPath": "xunit.runner.visualstudio.2.8.2.nupkg.sha512"
     },
     "Forecast.DataAccess.Postgress/1.0.0": {
       "type": "project",

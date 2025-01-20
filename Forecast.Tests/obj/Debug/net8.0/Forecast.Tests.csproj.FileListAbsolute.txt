@@ -253,3 +253,5 @@ C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\zh-Hans\Micro
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll

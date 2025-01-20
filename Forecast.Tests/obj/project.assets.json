@@ -2443,7 +2443,7 @@
           "build/xunit.runner.console.props": {}
         }
       },
-      "xunit.runner.visualstudio/3.0.1": {
+      "xunit.runner.visualstudio/2.8.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {}
@@ -7323,24 +7323,28 @@
         "xunit.runner.console.nuspec"
       ]
     },
-    "xunit.runner.visualstudio/3.0.1": {
-      "sha512": "lbyYtsBxA8Pz8kaf5Xn/Mj1mL9z2nlBWdZhqFaj66nxXBa4JwiTDm4eGcpSMet6du9TOWI6bfha+gQR6+IHawg==",
+    "xunit.runner.visualstudio/2.8.2": {
+      "sha512": "vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==",
       "type": "package",
-      "path": "xunit.runner.visualstudio/3.0.1",
+      "path": "xunit.runner.visualstudio/2.8.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "_content/README.md",
         "_content/logo-128-transparent.png",
-        "build/net472/xunit.abstractions.dll",
-        "build/net472/xunit.runner.visualstudio.props",
-        "build/net472/xunit.runner.visualstudio.testadapter.dll",
+        "build/net462/xunit.abstractions.dll",
+        "build/net462/xunit.runner.reporters.net452.dll",
+        "build/net462/xunit.runner.utility.net452.dll",
+        "build/net462/xunit.runner.visualstudio.props",
+        "build/net462/xunit.runner.visualstudio.testadapter.dll",
         "build/net6.0/xunit.abstractions.dll",
+        "build/net6.0/xunit.runner.reporters.netcoreapp10.dll",
+        "build/net6.0/xunit.runner.utility.netcoreapp10.dll",
         "build/net6.0/xunit.runner.visualstudio.props",
         "build/net6.0/xunit.runner.visualstudio.testadapter.dll",
-        "lib/net472/_._",
+        "lib/net462/_._",
         "lib/net6.0/_._",
-        "xunit.runner.visualstudio.3.0.1.nupkg.sha512",
+        "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
     },
@@ -7363,10 +7367,11 @@
       "MSTest.TestFramework >= 3.7.1",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "Microsoft.TestPlatform >= 17.12.0",
+      "Microsoft.TestPlatform.TestHost >= 17.12.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
       "xunit.runner.console >= 2.9.3",
-      "xunit.runner.visualstudio >= 3.0.1"
+      "xunit.runner.visualstudio >= 2.8.2"
     ]
   },
   "packageFolders": {
@@ -7443,6 +7448,10 @@
             "target": "Package",
             "version": "[17.12.0, )"
           },
+          "Microsoft.TestPlatform.TestHost": {
+            "target": "Package",
+            "version": "[17.12.0, )"
+          },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -7463,7 +7472,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[3.0.1, )"
+            "version": "[2.8.2, )"
           }
         },
         "imports": [
