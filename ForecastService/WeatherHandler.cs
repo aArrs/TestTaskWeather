@@ -34,7 +34,7 @@ namespace GetWeatherInfo
 
         public static async Task<string> BuildMail(ForecastEntity forecast)
         {
-            string message = $"Date: {forecast.Date},\nTemperature: {forecast.Temperature},\nText description: {forecast.About},\nRegion: {forecast.Region},\nJson-response: {forecast.Response}";
+            string message = $"Date: {forecast.Date}, Temperature: {forecast.Temperature}, Text description: {forecast.About}, Region: {forecast.Region}, Json-response: {forecast.Response}";
 
             return message;
         }

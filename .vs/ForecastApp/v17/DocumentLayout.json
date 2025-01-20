@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\C#\\Repositories\\TestTaskWeather\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|c:\\c#\\repositories\\testtaskweather\\forecast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|solutionrelative:forecast.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|c:\\c#\\repositories\\testtaskweather\\forecast.tests\\forecast.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|solutionrelative:forecast.tests\\forecast.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\repositories\\testtaskweather\\forecastservice\\weather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\weather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\repositories\\testtaskweather\\forecastservice\\weatherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\weatherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|c:\\c#\\repositories\\testtaskweather\\forecast.tests\\weatherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|solutionrelative:forecast.tests\\weatherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|c:\\c#\\repositories\\testtaskweather\\forecast.tests\\forecast.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5AEE2089-D9A1-4B1D-8748-4C48476B2852}|Forecast.Tests\\Forecast.Tests.csproj|solutionrelative:forecast.tests\\forecast.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\repositories\\testtaskweather\\forecastservice\\weatherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|solutionrelative:forecastservice\\weatherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F97D518-18E3-4E47-A493-79214654BA0F}|ForecastService\\ForecastService.csproj|c:\\c#\\repositories\\testtaskweather\\forecastservice\\forecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,24 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Forecast.Tests",
+              "DocumentIndex": 0,
+              "Title": "Forecast.Tests.csproj",
               "DocumentMoniker": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.Tests\\Forecast.Tests.csproj",
               "RelativeDocumentMoniker": "Forecast.Tests\\Forecast.Tests.csproj",
               "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.Tests\\Forecast.Tests.csproj",
               "RelativeToolTip": "Forecast.Tests\\Forecast.Tests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-01-20T07:14:34.243Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "ForecastService\\Weather.cs",
               "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\ForecastService\\Weather.cs",
               "RelativeToolTip": "ForecastService\\Weather.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T07:03:46.578Z",
               "EditorCaption": ""
@@ -77,26 +77,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WeatherHandler.cs",
               "DocumentMoniker": "C:\\C#\\Repositories\\TestTaskWeather\\ForecastService\\WeatherHandler.cs",
               "RelativeDocumentMoniker": "ForecastService\\WeatherHandler.cs",
               "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\ForecastService\\WeatherHandler.cs",
               "RelativeToolTip": "ForecastService\\WeatherHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCQAAACYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T06:39:04.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "Forecast.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.Tests\\UnitTest1.cs",
-              "RelativeToolTip": "Forecast.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "WeatherHandlerTests.cs",
+              "DocumentMoniker": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.Tests\\WeatherHandlerTests.cs",
+              "RelativeDocumentMoniker": "Forecast.Tests\\WeatherHandlerTests.cs",
+              "ToolTip": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.Tests\\WeatherHandlerTests.cs",
+              "RelativeToolTip": "Forecast.Tests\\WeatherHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T06:31:47.937Z",
               "EditorCaption": ""
