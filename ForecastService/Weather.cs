@@ -9,12 +9,11 @@ namespace ForecastServices
 {
     public class Weather
     {
-
-        public string date { get; set; }
         [JsonPropertyName("date")]
+        public string date { get; set; }
 
-        public string temperature { get; set; }
         [JsonPropertyName("temperature")]
-
+        public string temperature { get; set; }
+        
     }
 }

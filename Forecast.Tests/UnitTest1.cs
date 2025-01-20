@@ -1,3 +1,5 @@
+using Forecast.DataAccess.Postgress.Models;
+
 namespace Forecast.Tests
 {
     public class UnitTest1
@@ -5,7 +7,7 @@ namespace Forecast.Tests
         [Fact]
         public void Test1()
         {
-
+            ForecastEntity testForecast = ();
         }
     }
 }
