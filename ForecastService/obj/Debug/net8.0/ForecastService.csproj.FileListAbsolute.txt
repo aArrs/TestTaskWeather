@@ -313,3 +313,7 @@ C:\C#\Repositories\TestTaskWeather\ForecastService\obj\Debug\net8.0\refint\Forec
 C:\C#\Repositories\TestTaskWeather\ForecastService\obj\Debug\net8.0\ForecastService.pdb
 C:\C#\Repositories\TestTaskWeather\ForecastService\obj\Debug\net8.0\ForecastService.genruntimeconfig.cache
 C:\C#\Repositories\TestTaskWeather\ForecastService\obj\Debug\net8.0\ref\ForecastService.dll
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.abstractions.dll
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.assert.dll
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.core.dll
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.execution.dotnet.dll

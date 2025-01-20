@@ -72,9 +72,9 @@ namespace GetWeatherInfo
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
-                ForecastEntity forecast1 = await GetWeatherAsync(hrefConnect);
+                ForecastEntity forecast = await GetWeatherAsync(hrefConnect);
 
-                db.ForecastUnit.Add(forecast1);
+                db.ForecastUnit.Add(forecast);
                 db.SaveChanges();
             }
         }
