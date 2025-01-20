@@ -4,6 +4,7 @@ using System.Net.Mail;
 using Forecast.DataAccess.Postgress.Context;
 using Forecast.DataAccess.Postgress.Models;
 using ForecastServices;
+using System.Net.Http.Json;
 
 namespace GetWeatherInfo
 {
@@ -16,21 +17,12 @@ namespace GetWeatherInfo
 
         public static async Task<ForecastEntity> GetWeatherAsync(string href)
         {
-            using HttpResponseMessage response = await httpClient.GetAsync(href);
+            using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, href);
+            using HttpResponseMessage response = await httpClient.SendAsync(request);
 
-            string content = await response.Content.ReadAsStringAsync();
-            Weather weather = new(content);
-            weather = JsonSerializer.Deserialize<Weather>(content);
+            Weather content = await response.Content.ReadFromJsonAsync<Weather>();
 
-            var current = JsonDocument.Parse(content).RootElement.GetProperty("current");
-            var location = JsonDocument.Parse(content).RootElement.GetProperty("location");
-
-            double temperature = double.Parse(current.GetProperty("temp_c").ToString(), System.Globalization.CultureInfo.InvariantCulture);
-            string about = current.GetProperty("condition").GetProperty("text").ToString();
-            string region = location.GetProperty("region").ToString();
-            string date = location.GetProperty("localtime").ToString();
-
-            ForecastEntity forecast = new ForecastEntity(date, temperature, about, region, content);
+            ForecastEntity forecast = new ForecastEntity(content.location.date, content.current.temperature,  content.current.condition.about, content.location.region, await response.Content.ReadAsStringAsync());
 
             return forecast; 
         }

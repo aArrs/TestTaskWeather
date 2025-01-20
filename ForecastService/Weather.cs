@@ -18,7 +18,6 @@ namespace ForecastServices
             this.current = current;
         }
     }
-
     public class Location
     {
         [JsonPropertyName("name")]
@@ -31,21 +30,21 @@ namespace ForecastServices
         public string country { get; set; }
 
         [JsonPropertyName("lat")]
-        public string lat { get; set; }
+        public double lat { get; set; }
 
         [JsonPropertyName("lon")]
-        public string lon { get; set; }
+        public double lon { get; set; }
 
         [JsonPropertyName("tz_id")]
         public string tzId { get; set; }
 
         [JsonPropertyName("localtime_epoch")]
-        public string localtimeEpoch { get; set; }
+        public int localtimeEpoch { get; set; }
 
         [JsonPropertyName("localtime")]
         public string date { get; set; }
 
-        public Location(string name, string region, string country, string lat, string lon, string tzId, string localtimeEpoch, string date)
+        public Location(string name, string region, string country, double lat, double lon, string tzId, int localtimeEpoch, string date)
         {
             this.name = name;   
             this.region = region;
@@ -60,24 +59,23 @@ namespace ForecastServices
     public class Current
     {
         [JsonPropertyName("temp_c")]
-        public string temperature { get; set; }
+        public double temperature { get; set; }
         public Condition condition { get; set; }
 
-        public Current(string temperature, Condition condition) 
+        public Current(double temperature, Condition condition) 
         {
             this.temperature = temperature;
             this.condition = condition;
         }     
     }
-
     public class Condition
     {
-        [JsonPropertyName("condition")]
-        public string condition { get; set; }
+        [JsonPropertyName("text")]
+        public string about { get; set; }
 
-        public Condition(string condition)
+        public Condition(string about)
         {
-            this.condition = condition;
+            this.about = about;
         }
     }
 }
