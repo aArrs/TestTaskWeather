@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "74CN3SEQvr0=",
+  "dgSpecHash": "ZkehGJ1Yny0=",
   "success": true,
   "projectFilePath": "C:\\C#\\Repositories\\TestTaskWeather\\Forecast.DataAccess.Postgress\\Forecast.DataAccess.Postgress.csproj",
   "expectedPackageFiles": [
@@ -71,6 +71,7 @@
     "C:\\Users\\closs\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\closs\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\closs\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\closs\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\closs\\.nuget\\packages\\npgsql\\8.0.6\\npgsql.8.0.6.nupkg.sha512",
     "C:\\Users\\closs\\.nuget\\packages\\npgsql.dependencyinjection\\8.0.3\\npgsql.dependencyinjection.8.0.3.nupkg.sha512",
     "C:\\Users\\closs\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.11\\npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",

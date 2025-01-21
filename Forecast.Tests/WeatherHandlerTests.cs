@@ -1,5 +1,5 @@
 using Forecast.DataAccess.Postgress.Models;
-using GetWeatherInfo;
+using ForecastService.FunctionalClassess;
 
 namespace Forecast.Tests
 {

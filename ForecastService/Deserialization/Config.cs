@@ -1,60 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Net.Mail;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
-namespace ForecastService.Deserialization
+namespace ForecastBackgroundService.Deserialization
 {
-    public class Config
+    public class DevConfig
     {
-        public Logging logging { get; set; }
-        public ConnectionStrings connectionStrings { get; set; }
         public WeatherApiSettings weatherApiSettings { get; set; }
         public MailSettings mailSettings { get; set; }
 
-        public Config(Logging logging, ConnectionStrings connectionStrings, WeatherApiSettings weatherApiSettings, MailSettings mailSettings) 
+        public DevConfig(WeatherApiSettings weatherApiSettings, MailSettings mailSettings) 
         {
-            this.logging = logging;
-            this.connectionStrings = connectionStrings;
             this.weatherApiSettings = weatherApiSettings;
             this.mailSettings = mailSettings;
-        }
-    }
-    public class Logging
-    {
-        public LogLevel logLevel { get; set; }
-
-        public Logging(LogLevel loglevel) 
-        {
-            this.logLevel = loglevel;
-        }
-    }
-    public class LogLevel
-    {
-        [JsonPropertyName("Default")]
-        public string def { get; set; }
-
-        [JsonPropertyName("Microsoft.Hosting.Lifetime")]
-        public string lifetime { get; set; }
-
-        public LogLevel(string def, string lifetime)
-        {
-            this.def = def;
-            this.lifetime = lifetime;
-        }
-    }
-    public class ConnectionStrings
-    {
-        [JsonPropertyName("WeatherDbContext")]
-        public string dbConnect { get; set; }
-
-        public ConnectionStrings(string dbConnect)
-        {
-            this.dbConnect = dbConnect;
         }
     }
     public class WeatherApiSettings

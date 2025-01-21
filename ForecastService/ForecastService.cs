@@ -1,5 +1,5 @@
 ﻿using Forecast.DataAccess.Postgress.Models;
-using GetWeatherInfo;
+using ForecastServices.FunctionalClassess;
 
 namespace ForecastBackgroundService
 {
@@ -18,8 +18,8 @@ namespace ForecastBackgroundService
                 {
                 if (_logger.IsEnabled(LogLevel.Information))
                 {
-                    WeatherHandler.AddToDb();
-                    WeatherHandler.SendMail();
+                    DbHandler.AddToDb();
+                    MailHandler.SendMail(WeatherHandler.devConfig);
                    // WeatherHandler.GetDbData();
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }

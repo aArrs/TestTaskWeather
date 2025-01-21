@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
+using Forecast.DataAccess.Postgress.Deserialization;
 using System.Text.Json;
 using Forecast.DataAccess.Postgress.Models;
 
@@ -16,7 +12,7 @@ namespace Forecast.DataAccess.Postgress.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string filepath = Path.GetFullPath("appsettings.Development.json");
+            string filepath = Path.GetFullPath("dbConnectionSettings.json");
             var connectProps = JsonDocument.Parse(File.ReadAllText(filepath)).RootElement.GetProperty("ConnectionStrings").GetProperty("WeatherDbContext").ToString();
 
             optionsBuilder.UseNpgsql(connectProps);
