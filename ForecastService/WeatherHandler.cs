@@ -3,8 +3,8 @@ using System.Text.Json;
 using System.Net.Mail;
 using Forecast.DataAccess.Postgress.Context;
 using Forecast.DataAccess.Postgress.Models;
-using ForecastServices;
 using System.Net.Http.Json;
+using ForecastService.Deserialization;
 
 namespace GetWeatherInfo
 {

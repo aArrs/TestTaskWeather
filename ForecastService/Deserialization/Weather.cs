@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-namespace ForecastServices
+namespace ForecastService.Deserialization
 {
     public class Weather
     {
@@ -46,7 +46,7 @@ namespace ForecastServices
 
         public Location(string name, string region, string country, double lat, double lon, string tzId, int localtimeEpoch, string date)
         {
-            this.name = name;   
+            this.name = name;
             this.region = region;
             this.country = country;
             this.lat = lat;
@@ -62,11 +62,11 @@ namespace ForecastServices
         public double temperature { get; set; }
         public Condition condition { get; set; }
 
-        public Current(double temperature, Condition condition) 
+        public Current(double temperature, Condition condition)
         {
             this.temperature = temperature;
             this.condition = condition;
-        }     
+        }
     }
     public class Condition
     {
