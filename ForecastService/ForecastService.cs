@@ -6,7 +6,7 @@ namespace ForecastBackgroundService
     public class ForecastService : BackgroundService
     {
         private readonly ILogger<ForecastService> _logger;
-
+        MailHandler mailHandler = new MailHandler();
         public ForecastService(ILogger<ForecastService> logger)
         {
             _logger = logger;
@@ -19,7 +19,7 @@ namespace ForecastBackgroundService
                 if (_logger.IsEnabled(LogLevel.Information))
                 {
                     DbHandler.AddToDb();
-                    MailHandler.SendMail(WeatherHandler.devConfig);
+                    MailHandler.SendMail(mailHandler.DevConfig);
                    // WeatherHandler.GetDbData();
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }

@@ -1,8 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿
 using Microsoft.EntityFrameworkCore;
 using Forecast.DataAccess.Postgress.Deserialization;
 using System.Text.Json;
 using Forecast.DataAccess.Postgress.Models;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace Forecast.DataAccess.Postgress.Context
 {
@@ -14,7 +16,7 @@ namespace Forecast.DataAccess.Postgress.Context
         {
             string filepath = Path.GetFullPath("dbConnectionSettings.json");
             var connectProps = JsonDocument.Parse(File.ReadAllText(filepath)).RootElement.GetProperty("ConnectionStrings").GetProperty("WeatherDbContext").ToString();
-
+            
             optionsBuilder.UseNpgsql(connectProps);
         }
     }
