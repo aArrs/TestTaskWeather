@@ -11,6 +11,6 @@ namespace ForecastServices.FunctionalClassess
     {
         public virtual string JsonString { get; }
         public virtual DevConfig? DevConfig { get; }
-        public virtual Weather Weather { get; }
+        public virtual Weather? Weather { get; }
     }
 }

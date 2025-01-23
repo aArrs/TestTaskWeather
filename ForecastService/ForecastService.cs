@@ -20,7 +20,7 @@ namespace ForecastBackgroundService
                 if (_logger.IsEnabled(LogLevel.Information))
                 {
                     dbHandler.AddToDb();
-                    mailHandler.SendMail(mailHandler.DevConfig);
+                    MailHandler.SendMail(mailHandler.DevConfig);
                    // WeatherHandler.GetDbData();
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }

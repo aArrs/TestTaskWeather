@@ -1,5 +1,5 @@
 using Forecast.DataAccess.Postgress.Models;
-using ForecastServices.FunctionalClassess;
+using ForecastService.FunctionalClassess;
 
 namespace Forecast.Tests
 {
@@ -10,7 +10,7 @@ namespace Forecast.Tests
         {
             ForecastEntity Forecast = new("2025-01-20 10:52", 22, "Sunny", "Lida", "{Response: Test}");
 
-            string result = await MailHandler.BuildMail(Forecast);
+            string result = await WeatherHandler.BuildMail(Forecast);
 
             Assert.Equal("Date: 2025-01-20 10:52, Temperature: 22, Text description: Sunny, Region: Lida, Json-response: {Response: Test}", result);
         }
@@ -20,7 +20,7 @@ namespace Forecast.Tests
         {
             ForecastEntity Forecast = new("2025-01-20 10:52", 22, "Sunny", "Lida", "{Response: Test}");
 
-            string result = await MailHandler.BuildMail(Forecast);
+            string result = await WeatherHandler.BuildMail(Forecast);
 
             Assert.NotNull(result);
         }
