@@ -13,6 +13,7 @@ namespace ForecastServices.FunctionalClassess
         public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
+        public override Weather? Weather => base.Weather;
         public static async Task<string> BuildMail(ForecastEntity forecast)
         {
             string message = $"Date: {forecast.Date}, Temperature: {forecast.Temperature}, Text description: {forecast.About}, Region: {forecast.Region}, Json-response: {forecast.Response}";
@@ -20,9 +21,9 @@ namespace ForecastServices.FunctionalClassess
             return message;
         }
 
-        public static async void SendMail(DevConfig DevConfig)
+        public async void SendMail(DevConfig DevConfig)
         {
-            string msgBody = await BuildMail(await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference));
+            string msgBody = await BuildMail(await WeatherHandler.GetWeatherAsync(await WeatherHandler.GetResponseMessageAsync(DevConfig.weatherApiSettings.reference), Weather));
 
             MailAddress From = new MailAddress(DevConfig.mailSettings.senderAdress, DevConfig.mailSettings.senderName);
             MailAddress To = new MailAddress(DevConfig.mailSettings.recipientAdress);
