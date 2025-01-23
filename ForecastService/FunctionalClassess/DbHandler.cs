@@ -5,17 +5,15 @@ using Newtonsoft.Json;
 
 namespace ForecastServices.FunctionalClassess
 {
-    public class DbHandler
-    {
-        static string filepath = Path.GetFullPath("appsettings.Development.json");
-        static string jsonString = File.ReadAllText(filepath);
-        public static DevConfig? devConfig = JsonConvert.DeserializeObject<DevConfig>(jsonString);
-        static string hrefConnect = devConfig.weatherApiSettings.reference;
-        public static async void AddToDb()
+    public class DbHandler : DeserializationContract
+    {        
+        public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
+        public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
+        public async void AddToDb()
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
-                ForecastEntity forecast = await WeatherHandler.GetWeatherAsync(hrefConnect);
+                ForecastEntity forecast = await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference);
 
                 db.ForecastUnit.Add(forecast);
                 db.SaveChanges();

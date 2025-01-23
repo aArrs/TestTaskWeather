@@ -8,9 +8,10 @@ using Newtonsoft.Json;
 
 namespace ForecastServices.FunctionalClassess
 {
-    public class WeatherHandler
+    public class WeatherHandler : DeserializationContract
     {
         static HttpClient httpClient = new HttpClient();
+        
         static string filepath = Path.GetFullPath("appsettings.Development.json");
         static string jsonString = File.ReadAllText(filepath);
         public static DevConfig? devConfig = JsonConvert.DeserializeObject<DevConfig>(jsonString);
