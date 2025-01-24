@@ -1,61 +1,52 @@
-﻿using System.Net;
-using System.Net.Mail;
-using Forecast.DataAccess.Postgress.Context;
-using Forecast.DataAccess.Postgress.Models;
+﻿using Forecast.DataAccess.Postgress.Models;
 using System.Net.Http.Json;
 using ForecastBackgroundService.Deserialization;
 using Newtonsoft.Json;
-using Azure;
 
 namespace ForecastServices.FunctionalClassess
 {
-
-    interface IEntityProvider
+    interface IDataProvider
     {
-        Task<ForecastEntity> GetEntity(string href);
+        Task<Weather> GetData(DevConfig devConfig);
     }
-
-    public class ForecastEntityProvider : DeserializationContract, IEntityProvider
+    class DataProvider : DeserializationContract, IDataProvider
     {
-        static HttpClient httpClient = new HttpClient();
-        public async Task<ForecastEntity> GetEntity(string href)
+        public async Task<Weather> GetData(DevConfig devConfig)
         {
-            using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, href);
+            HttpClient httpClient = new HttpClient();
+
+            using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, devConfig.weatherApiSettings.reference);
             using HttpResponseMessage response = await httpClient.SendAsync(request);
 
-            Weather? content = await response.Content.ReadFromJsonAsync<Weather>();
-
-            ForecastEntity forecast = new ForecastEntity(content.location.date, content.current.temperature, content.current.condition.about, content.location.region, await response.Content.ReadAsStringAsync());
+            return await response.Content.ReadFromJsonAsync<Weather>();
+        }
+    }
+    interface IEntityProvider
+    {
+        Task<ForecastEntity> GetEntity(Weather weather);
+    }
+    class EntityProvider : IEntityProvider
+    {
+        public async Task<ForecastEntity> GetEntity(Weather weather)
+        {
+            ForecastEntity forecast = new ForecastEntity(weather.location.date, weather.current.temperature, weather.current.condition.about, weather.location.region, System.Text.Json.JsonSerializer.Serialize(weather));
 
             return forecast;
         }
     }
-
-    public class Program : DeserializationContract
+    public class WeatherHandler: DeserializationContract
     {
         public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
-        public static async Task<ForecastEntity> Main()
+        public async Task<ForecastEntity> Main()
         {
-            var program = new Program();
-            IEntityProvider entityProvider = new ForecastEntityProvider();
-            return await entityProvider.GetEntity(program.DevConfig.weatherApiSettings.reference);
+            IDataProvider _dataProvider = new DataProvider();
+            IEntityProvider _entityProvider = new EntityProvider();
+
+            Weather? weather = await _dataProvider.GetData(DevConfig);
+            ForecastEntity forecast = await _entityProvider.GetEntity(weather);
+
+            return forecast;
         }
     }
-    //public class WeatherHandler : DeserializationContract
-    //{
-    //    static HttpClient httpClient = new HttpClient();
-
-    //    public static async Task<ForecastEntity> GetWeatherAsync(string href)
-    //    {
-    //        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, href);
-    //        using HttpResponseMessage response = await httpClient.SendAsync(request);
-
-    //        Weather? content = await response.Content.ReadFromJsonAsync<Weather>();
-
-    //        ForecastEntity forecast = new ForecastEntity(content.location.date, content.current.temperature, content.current.condition.about, content.location.region, await response.Content.ReadAsStringAsync());
-
-    //        return forecast;
-    //    }
-    //}
 }

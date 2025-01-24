@@ -9,12 +9,14 @@ namespace ForecastServices.FunctionalClassess
     {        
         public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
+
+        WeatherHandler wHandler = new WeatherHandler();
         public async void AddToDb()
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
                 //ForecastEntity forecast = await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference);
-                ForecastEntity forecast = await Program.Main();
+                ForecastEntity forecast = await wHandler.Main();
 
                 db.ForecastUnit.Add(forecast);
                 db.SaveChanges();

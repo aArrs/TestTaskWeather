@@ -3,28 +3,33 @@ using ForecastBackgroundService.Deserialization;
 using System.Net.Mail;
 using System.Net;
 using Newtonsoft.Json;
+using System.Reflection.Metadata;
 
 
 namespace ForecastServices.FunctionalClassess
 {
-
-    public class MailHandler : DeserializationContract
+    interface IMessageBuilder
     {
-        public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
-        public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
-
-        public static async Task<string> BuildMail(ForecastEntity forecast)
+        string BuildMessage(ForecastEntity forecast);
+    }
+    class BuildMessage: IMessageBuilder
+    {
+        string IMessageBuilder.BuildMessage(ForecastEntity forecast)
         {
             string message = $"Date: {forecast.Date}, Temperature: {forecast.Temperature}, Text description: {forecast.About}, Region: {forecast.Region}, Json-response: {forecast.Response}";
 
             return message;
         }
-
-        public static async void SendMail(DevConfig DevConfig)
+    }
+    interface IMailSender
+    {
+         void SendMail(DevConfig DevConfig, string msgBody);
+    }
+    class SendMail : IMailSender
+    {
+        async void IMailSender.SendMail(DevConfig DevConfig, string msgBody)
         {
-            //string msgBody = await BuildMail(await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference));
-
-            string msgBody = await BuildMail(await Program.Main());
+            WeatherHandler wHandler = new WeatherHandler();
 
             MailAddress From = new MailAddress(DevConfig.mailSettings.senderAdress, DevConfig.mailSettings.senderName);
             MailAddress To = new MailAddress(DevConfig.mailSettings.recipientAdress);
@@ -41,6 +46,22 @@ namespace ForecastServices.FunctionalClassess
             smtp.EnableSsl = true;
             smtp.Send(msg);
         }
-        public MailHandler() { }
+    }
+
+    public class MailHandler: DeserializationContract
+    {
+        public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
+        public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
+
+        public async void Main()
+        {
+            IMessageBuilder _messageBuilder = new BuildMessage();
+            IMailSender _mailSender = new SendMail();
+
+            WeatherHandler wHandler = new WeatherHandler();
+
+            string msgBody = _messageBuilder.BuildMessage(await wHandler.Main());
+            _mailSender.SendMail(DevConfig, msgBody);
+        }
     }
 }
