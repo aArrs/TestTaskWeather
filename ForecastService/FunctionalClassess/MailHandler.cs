@@ -3,8 +3,6 @@ using ForecastBackgroundService.Deserialization;
 using System.Net.Mail;
 using System.Net;
 using Newtonsoft.Json;
-using System.Reflection.Metadata;
-
 
 namespace ForecastServices.FunctionalClassess
 {

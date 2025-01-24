@@ -1,13 +1,14 @@
-﻿using Forecast.DataAccess.Postgress.Models;
-using ForecastServices.FunctionalClassess;
+﻿using ForecastServices.FunctionalClassess;
 
 namespace ForecastBackgroundService
 {
     public class ForecastService : BackgroundService
     {
-        private readonly ILogger<ForecastService> _logger;
         MailHandler mailHandler = new MailHandler();
         DbHandler dbHandler = new DbHandler();
+
+        private readonly ILogger<ForecastService> _logger;   
+
         public ForecastService(ILogger<ForecastService> logger)
         {
             _logger = logger;
@@ -19,9 +20,8 @@ namespace ForecastBackgroundService
                 {
                 if (_logger.IsEnabled(LogLevel.Information))
                 {
-                    dbHandler.AddToDb();
+                    dbHandler.Main();
                     mailHandler.Main();
-                    DbHandler.GetDbData();
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
                 

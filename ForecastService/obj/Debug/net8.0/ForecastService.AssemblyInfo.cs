@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ForecastService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f620309e188c0020b311c3a842fcf03fb788867")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c562ce6b635be0a914a2de02de1b030b9d36f11f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ForecastService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ForecastService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,28 +2,32 @@
 using Forecast.DataAccess.Postgress.Models;
 using ForecastBackgroundService.Deserialization;
 using Newtonsoft.Json;
+using System.Reflection.Metadata;
 
 namespace ForecastServices.FunctionalClassess
 {
-    public class DbHandler : DeserializationContract
-    {        
-        public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
-        public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
-
-        WeatherHandler wHandler = new WeatherHandler();
-        public async void AddToDb()
+    interface IAddToDb
+    {
+        void AddToDb(ForecastEntity forecast);
+    }
+    class AddToDb : IAddToDb
+    {
+        async void IAddToDb.AddToDb(ForecastEntity forecast)
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
-                //ForecastEntity forecast = await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference);
-                ForecastEntity forecast = await wHandler.Main();
-
                 db.ForecastUnit.Add(forecast);
                 db.SaveChanges();
             }
         }
-
-        public static async void GetDbData()
+    }
+    interface IGetDbData
+    {
+        void GetDbData();
+    }
+    class GetDbData : IGetDbData
+    {
+        void IGetDbData.GetDbData()
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
@@ -31,6 +35,19 @@ namespace ForecastServices.FunctionalClassess
                 var forecasts = db.ForecastUnit.ToList();
                 Console.WriteLine(forecasts);
             }
+        }
+    }
+    public class DbHandler
+    {
+        public async void Main()
+        {
+        IAddToDb _dbAdder = new AddToDb();
+        IGetDbData _dataGetter = new GetDbData();
+
+        WeatherHandler wHandler = new WeatherHandler();
+
+        _dbAdder.AddToDb(await wHandler.Main());
+        //_dataGetter.GetDbData();
         }
     }
 }
