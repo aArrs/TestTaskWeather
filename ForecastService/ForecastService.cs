@@ -21,7 +21,7 @@ namespace ForecastBackgroundService
                 {
                     dbHandler.AddToDb();
                     MailHandler.SendMail(mailHandler.DevConfig);
-                   // WeatherHandler.GetDbData();
+                    DbHandler.GetDbData();
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
                 

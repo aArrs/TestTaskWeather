@@ -22,7 +22,9 @@ namespace ForecastServices.FunctionalClassess
 
         public static async void SendMail(DevConfig DevConfig)
         {
-            string msgBody = await BuildMail(await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference));
+            //string msgBody = await BuildMail(await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference));
+
+            string msgBody = await BuildMail(await Program.Main());
 
             MailAddress From = new MailAddress(DevConfig.mailSettings.senderAdress, DevConfig.mailSettings.senderName);
             MailAddress To = new MailAddress(DevConfig.mailSettings.recipientAdress);

@@ -13,7 +13,8 @@ namespace ForecastServices.FunctionalClassess
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
-                ForecastEntity forecast = await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference);
+                //ForecastEntity forecast = await WeatherHandler.GetWeatherAsync(DevConfig.weatherApiSettings.reference);
+                ForecastEntity forecast = await Program.Main();
 
                 db.ForecastUnit.Add(forecast);
                 db.SaveChanges();
