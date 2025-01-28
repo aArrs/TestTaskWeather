@@ -13,8 +13,18 @@ namespace ForecastServices.Interfaces
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
-                db.ForecastUnit.Add(forecast);
-                db.SaveChanges();
+                try
+                {
+                    db.ForecastUnit.Add(forecast);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+                finally
+                {
+                    db.SaveChanges();
+                }
             }
         }
     }

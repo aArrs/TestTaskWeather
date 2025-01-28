@@ -12,9 +12,15 @@ namespace ForecastServices.Interfaces
         {
             using (ForecastDbContext db = new ForecastDbContext())
             {
-                // получаем объекты из бд и выводим на консоль
-                var forecasts = db.ForecastUnit.ToList();
-                Console.WriteLine(forecasts);
+                try
+                {
+                    var forecasts = db.ForecastUnit.ToList();
+                    Console.WriteLine(forecasts);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
             }
         }
     }

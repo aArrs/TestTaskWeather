@@ -32,6 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="dbConnectionSettings.json" />
+    <None Include="Config\dbConnectionSettings.json" />
   </ItemGroup>
 </Project>

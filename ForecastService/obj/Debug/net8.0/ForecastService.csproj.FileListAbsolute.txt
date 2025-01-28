@@ -155,8 +155,6 @@ C:\C#\ForecastApp\ForecastService\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\C#\ForecastApp\ForecastService\bin\Debug\net8.0\Microsoft.Extensions.Hosting.WindowsServices.dll
 C:\C#\ForecastApp\ForecastService\bin\Debug\net8.0\System.ServiceProcess.ServiceController.dll
 C:\C#\ForecastApp\ForecastService\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll
-C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\appsettings.Development.json
-C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\appsettings.json
 C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\ForecastService.exe
 C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\ForecastService.deps.json
 C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\ForecastService.runtimeconfig.json
@@ -318,3 +316,6 @@ C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.assert
 C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.core.dll
 C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\xunit.execution.dotnet.dll
 C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\FluentAssertions.dll
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\Config\appsettings.Development.json
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\Config\appsettings.json
+C:\C#\Repositories\TestTaskWeather\ForecastService\bin\Debug\net8.0\Config\dbConnectionSettings.json

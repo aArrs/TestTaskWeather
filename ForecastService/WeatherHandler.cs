@@ -23,13 +23,14 @@ namespace ForecastServices
             _dbAdder = dbAdder;
         }
 
-        public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
+        public override string JsonString => File.ReadAllText(Path.GetFullPath("Config/appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
         HttpClient httpClient = new HttpClient();
 
         public async void Main()
         {
+
             Weather? weather = await _dataProvider.GetData(httpClient, DevConfig);
             ForecastEntity forecast = await _entityProvider.GetEntity(weather);
 

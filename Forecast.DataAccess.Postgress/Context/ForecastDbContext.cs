@@ -14,7 +14,7 @@ namespace Forecast.DataAccess.Postgress.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string filepath = Path.GetFullPath("dbConnectionSettings.json");
+            string filepath = Path.GetFullPath("Config/dbConnectionSettings.json");
             var connectProps = JsonDocument.Parse(File.ReadAllText(filepath)).RootElement.GetProperty("ConnectionStrings").GetProperty("WeatherDbContext").ToString();
             
             optionsBuilder.UseNpgsql(connectProps);
