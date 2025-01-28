@@ -27,8 +27,6 @@ namespace ForecastServices.FunctionalClassess
     {
         async void IMailSender.SendMail(DevConfig DevConfig, string msgBody)
         {
-            WeatherHandler wHandler = new WeatherHandler();
-
             MailAddress From = new MailAddress(DevConfig.mailSettings.senderAdress, DevConfig.mailSettings.senderName);
             MailAddress To = new MailAddress(DevConfig.mailSettings.recipientAdress);
 
@@ -46,20 +44,21 @@ namespace ForecastServices.FunctionalClassess
         }
     }
 
-    public class MailHandler: DeserializationContract
-    {
-        public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
-        public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
+    //public class MailHandler: DeserializationContract
+    //{
+    //    public override string JsonString => File.ReadAllText(Path.GetFullPath("appsettings.Development.json"));
+    //    public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
-        public async void Main()
-        {
-            IMessageBuilder _messageBuilder = new BuildMessage();
-            IMailSender _mailSender = new SendMail();
+    //    public async void Main()
+    //    {
+    //        IMessageBuilder _messageBuilder = new BuildMessage();
+    //        IMailSender _mailSender = new SendMail();
 
-            WeatherHandler wHandler = new WeatherHandler();
+    //        WeatherHandler wHandler = new WeatherHandler();
 
-            string msgBody = _messageBuilder.BuildMessage(await wHandler.Main());
-            _mailSender.SendMail(DevConfig, msgBody);
-        }
-    }
+    //        //string msgBody = _messageBuilder.BuildMessage(await weatherHandlerService.Main());
+    //        string msgBody = _messageBuilder.BuildMessage(await wHandler.Main());
+    //        _mailSender.SendMail(DevConfig, msgBody);
+    //    }
+    //}
 }

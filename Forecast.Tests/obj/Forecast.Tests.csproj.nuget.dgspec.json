@@ -288,6 +288,10 @@
               "target": "Package",
               "version": "[8.1.0, )"
             },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"

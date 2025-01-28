@@ -37,17 +37,21 @@ namespace ForecastServices.FunctionalClassess
             }
         }
     }
-    public class DbHandler
-    {
-        public async void Main()
-        {
-        IAddToDb _dbAdder = new AddToDb();
-        IGetDbData _dataGetter = new GetDbData();
+    //public class DbHandler
+    //{
+    //    public DbHandler()
+    //    {
+            
+    //    }
+    //    public async void Main()
+    //    {
+    //    IAddToDb _dbAdder = new AddToDb();
+    //    IGetDbData _dataGetter = new GetDbData();
 
-        WeatherHandler wHandler = new WeatherHandler();
+    //    WeatherHandler wHandler = new WeatherHandler();
 
-        _dbAdder.AddToDb(await wHandler.Main());
-        //_dataGetter.GetDbData();
-        }
-    }
+    //    _dbAdder.AddToDb(await wHandler.Main());
+    //    //_dataGetter.GetDbData();
+    //    }
+    //}
 }

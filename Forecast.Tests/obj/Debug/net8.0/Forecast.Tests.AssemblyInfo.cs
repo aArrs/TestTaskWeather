@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Forecast.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0e2566be660c4113ef142b0dacf89f0f24179f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0db88bf86d9ce8132c4eb282752c30cab62068f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Forecast.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Forecast.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
