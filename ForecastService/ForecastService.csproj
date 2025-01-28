@@ -32,11 +32,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Tests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="dbConnectionSettings.json" />
   </ItemGroup>
 </Project>

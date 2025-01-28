@@ -1,5 +1,4 @@
-﻿
-using ForecastServices.FunctionalClassess;
+﻿using ForecastServices;
 
 namespace ForecastBackgroundService
 {
@@ -23,8 +22,7 @@ namespace ForecastBackgroundService
                     wHandler.Main();                   
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
-                
-                await Task.Delay(1000, stoppingToken);
+                await Task.Delay(TimeSpan.FromMinutes(30), stoppingToken);
             }
         }
     }

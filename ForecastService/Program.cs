@@ -1,5 +1,6 @@
 using ForecastBackgroundService;
-using ForecastServices.FunctionalClassess;
+using ForecastServices.Interfaces;
+using ForecastServices;
 
 var builder = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
@@ -15,6 +16,5 @@ var builder = Host.CreateDefaultBuilder(args)
     })
     .UseWindowsService()
     .Build();
-
 
 await builder.RunAsync();

@@ -1,6 +1,6 @@
 ﻿using ForecastBackgroundService.Deserialization;
 
-namespace ForecastServices.FunctionalClassess
+namespace ForecastServices.Deserialization
 {
     public abstract class DeserializationContract
     {
