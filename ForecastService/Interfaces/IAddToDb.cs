@@ -17,8 +17,10 @@ namespace ForecastServices.Interfaces
         }
         async void IAddToDb.AddToDb(ForecastEntity forecast)
         {
+            
             using (ForecastDbContext db = new ForecastDbContext())
             {
+                using var transaction = await db.Database.BeginTransactionAsync();
                 _logger.LogInformation($"Trying to add entity to the database: {DateTime.Now}");
                 try
                 {
@@ -32,6 +34,7 @@ namespace ForecastServices.Interfaces
                 finally
                 {
                     db.SaveChanges();
+                    await transaction.CommitAsync();
                     _logger.LogInformation("Changes in database saved successfully");
                 }
             }

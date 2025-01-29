@@ -14,8 +14,9 @@ namespace ForecastServices
         private readonly IMailSender _mailSender;
         private readonly IAddToDb _dbAdder;
         private readonly ILogger _logger;
+        private readonly IGetDbData _get;
 
-        public WeatherHandler(IDataProvider dataProvider, IEntityProvider entityProvider, IMessageBuilder messageBuilder, IMailSender mailSender, IAddToDb dbAdder, ILogger logger)
+        public WeatherHandler(IDataProvider dataProvider, IEntityProvider entityProvider, IMessageBuilder messageBuilder, IMailSender mailSender, IAddToDb dbAdder, ILogger logger, IGetDbData get)
         {
             _dataProvider = dataProvider;
             _entityProvider = entityProvider;
@@ -23,8 +24,9 @@ namespace ForecastServices
             _mailSender = mailSender;
             _dbAdder = dbAdder;
             _logger = logger;
-        }
+            _get = get;
 
+        }
         public override string JsonString => File.ReadAllText(Path.GetFullPath("Config/appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
@@ -38,6 +40,7 @@ namespace ForecastServices
                 Weather? weather = await _dataProvider.GetData(httpClient, DevConfig);
                 ForecastEntity forecast = await _entityProvider.GetEntity(weather);
                 _dbAdder.AddToDb(forecast);
+                _get.GetDbData();
                 _mailSender.SendMail(DevConfig, _messageBuilder.BuildMessage(forecast));
             }
             catch(Exception ex)
