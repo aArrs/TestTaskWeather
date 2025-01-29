@@ -17,9 +17,9 @@ namespace ForecastBackgroundService
         {
             while (!stoppingToken.IsCancellationRequested)
                 {
+                wHandler.Main();
                 if (_logger.IsEnabled(LogLevel.Information))
-                {
-                    wHandler.Main();                   
+                {              
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
                 await Task.Delay(TimeSpan.FromMinutes(30), stoppingToken);
