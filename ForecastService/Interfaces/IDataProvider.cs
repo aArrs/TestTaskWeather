@@ -4,11 +4,11 @@ using System.Net.Http.Json;
 
 namespace ForecastServices.Interfaces
 {
-    interface IDataProvider
+    public interface IDataProvider
     {
         Task<Weather> GetData(HttpClient httpClient, DevConfig devConfig);
     }
-    class DataProvider : DeserializationContract, IDataProvider
+    public class DataProvider : DeserializationContract, IDataProvider
     {
         private readonly ILogger<DataProvider> _logger;
         public DataProvider(ILogger<DataProvider> logger)

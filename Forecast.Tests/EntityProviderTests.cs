@@ -1,10 +1,8 @@
 using Forecast.DataAccess.Postgress.Models;
-using ForecastServices;
 using ForecastServices.Interfaces;
 using Microsoft.Extensions.Logging;
 using FakeItEasy;
 using ForecastBackgroundService.Deserialization;
-using System.Text.Json;
 
 namespace Forecast.Tests
 {
@@ -16,7 +14,7 @@ namespace Forecast.Tests
         Weather weather = new Weather(location, current);
 
         [Fact]
-        public async void EntityProviderResultValue()
+        public async void EntityProviderResultType()
         {
             var _logger = A.Fake<ILogger<EntityProvider>>();
             IEntityProvider _entityProvider = new EntityProvider(_logger);
