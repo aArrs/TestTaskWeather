@@ -3,11 +3,11 @@ using ForecastBackgroundService.Deserialization;
 
 namespace ForecastServices.Interfaces
 {
-    interface IEntityProvider
+    public interface IEntityProvider
     {
         Task<ForecastEntity> GetEntity(Weather weather);
     }
-    class EntityProvider : IEntityProvider
+    public class EntityProvider : IEntityProvider
     {
         private readonly ILogger<EntityProvider> _logger;
         public EntityProvider(ILogger<EntityProvider> logger)

@@ -5,7 +5,7 @@ using System.Net;
 
 namespace ForecastServices.Interfaces
 {
-    interface IMailSender
+    public interface IMailSender
     {
         void SendMail(DevConfig DevConfig, string msgBody);
     }

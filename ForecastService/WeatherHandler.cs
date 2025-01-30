@@ -25,7 +25,6 @@ namespace ForecastServices
             _dbAdder = dbAdder;
             _logger = logger;
             _get = get;
-
         }
         public override string JsonString => File.ReadAllText(Path.GetFullPath("Config/appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);

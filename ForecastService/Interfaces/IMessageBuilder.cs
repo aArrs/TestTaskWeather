@@ -2,13 +2,14 @@
 
 namespace ForecastServices.Interfaces
 {
-    interface IMessageBuilder
+    public interface IMessageBuilder
     {
         string BuildMessage(ForecastEntity forecast);
     }
-    class BuildMessage : IMessageBuilder
+    public class BuildMessage : IMessageBuilder
     {
         private readonly ILogger<BuildMessage> _logger;
+
         public BuildMessage(ILogger<BuildMessage> logger)
         {
             _logger = logger;

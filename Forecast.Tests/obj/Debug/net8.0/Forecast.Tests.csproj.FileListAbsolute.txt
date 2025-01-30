@@ -3,8 +3,6 @@ C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\testhost.dll
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\xunit.abstractions.dll
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\ForecastService.deps.json
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\ForecastService.runtimeconfig.json
-C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\appsettings.Development.json
-C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\appsettings.json
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\ForecastService.exe
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\testhost.exe
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
@@ -255,3 +253,9 @@ C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Microsoft.Vis
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Config\appsettings.Development.json
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Config\appsettings.json
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Config\dbConnectionSettings.json
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\FluentAssertions.dll
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\Castle.Core.dll
+C:\C#\Repositories\TestTaskWeather\Forecast.Tests\bin\Debug\net8.0\FakeItEasy.dll
