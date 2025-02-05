@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore ForecastApp.sln
     - name: Test 
-      run: dotnet test --no-build --verbosity normal ForecastApp.sln/Tests.csproj
+      run: dotnet test --no-build --verbosity normal D:\a\TestTaskWeather\TestTaskWeather\Tests\Tests.csproj
