@@ -6,7 +6,6 @@ namespace Forecast.DataAccess.Postgress.Deserialization
     public class Config
     {
         public ConnectionStrings connectionStrings { get; set; }
-
         public Config(ConnectionStrings connectionStrings) 
         {
             this.connectionStrings = connectionStrings;

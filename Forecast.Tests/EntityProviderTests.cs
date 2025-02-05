@@ -11,10 +11,10 @@ namespace Forecast.Tests
         static Location location = new Location("Minsk", "Minsk", "Belarus", 53.9, 27.5668, "Europe/Minsk", 1738221506, "2025-01-30 10-10");
         static Condition condition = new Condition("Sunny");
         static Current current = new Current(2.3, condition);
-        Weather weather = new Weather(location, current);
+        readonly Weather weather = new Weather(location, current);
 
         [Fact]
-        public async void EntityProviderResultType()
+        public async Task EntityProviderResultType()
         {
             var _logger = A.Fake<ILogger<EntityProvider>>();
             IEntityProvider _entityProvider = new EntityProvider(_logger);

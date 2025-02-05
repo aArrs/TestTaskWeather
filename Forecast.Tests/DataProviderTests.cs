@@ -10,12 +10,12 @@ namespace Forecast.Tests
 {
     public class DataProviderTests: DeserializationContract
     {
-        HttpClient httpClient = new HttpClient();
+        readonly HttpClient httpClient = new HttpClient();
         public override string JsonString => File.ReadAllText(Path.GetFullPath("Config/appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
         [Fact]
-        public async void DataProviderResultType()
+        public async Task DataProviderResultType()
         {
             var _logger = A.Fake<ILogger<DataProvider>>();
             IDataProvider _dataProvider = new DataProvider(_logger);

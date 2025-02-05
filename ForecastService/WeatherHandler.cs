@@ -29,7 +29,7 @@ namespace ForecastServices
         public override string JsonString => File.ReadAllText(Path.GetFullPath("Config/appsettings.Development.json"));
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
-        HttpClient httpClient = new HttpClient();
+        readonly HttpClient httpClient = new HttpClient();
 
         public async void Main()
         {
@@ -37,12 +37,12 @@ namespace ForecastServices
             try
             {
                 Weather? weather = await _dataProvider.GetData(httpClient, DevConfig);
-                ForecastEntity forecast = await _entityProvider.GetEntity(weather);
+                ForecastEntity? forecast = await _entityProvider.GetEntity(weather);
                 _dbAdder.AddToDb(forecast);
                 _get.GetDbData();
                 _mailSender.SendMail(DevConfig, _messageBuilder.BuildMessage(forecast));
             }
-            catch(Exception ex)
+            catch(Exception ex)                                                             
             {
                 _logger.LogError($"Something went wrong, error text: {ex.Message}");
             }  
