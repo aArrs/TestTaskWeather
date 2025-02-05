@@ -14,7 +14,7 @@ namespace Forecast.Tests
         public override DevConfig? DevConfig => JsonConvert.DeserializeObject<DevConfig>(JsonString);
 
         [Test]
-        public async Task Test1()
+        public async Task DataProviderValie()
         {
             var _logger = A.Fake<ILogger<DataProvider>>();
             IDataProvider _dataProvider = new DataProvider(_logger);
