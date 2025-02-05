@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ForecastApp.sln
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
+      run: dotnet build --no-restore ForecastApp.sln
+    - name: Test Tests
       run: dotnet test --no-build --verbosity normal
