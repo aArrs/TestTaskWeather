@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Forecast.DataAccess.Postgress.Models;
+
 namespace Forecast.DataAccess.Postgress.Configurations
 {
     public class ForecastDbConfiguration : IEntityTypeConfiguration<ForecastEntity>

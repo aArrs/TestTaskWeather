@@ -1,5 +1,4 @@
-﻿using Forecast.DataAccess.Postgress.Models;
-using ForecastBackgroundService.Deserialization;
+﻿using ForecastBackgroundService.Deserialization;
 using System.Net.Mail;
 using System.Net;
 
@@ -16,7 +15,7 @@ namespace ForecastServices.Interfaces
         {
             _logger = logger;
         }
-        async void IMailSender.SendMail(DevConfig DevConfig, string msgBody)
+        void IMailSender.SendMail(DevConfig DevConfig, string msgBody)
         {
             _logger.LogInformation($"Trying to send mail: {DateTime.Now}");
             try
